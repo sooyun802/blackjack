@@ -1,6 +1,7 @@
 ## Multiplayer Blackjack Game
 
-Blackjack is a card game for making the score 21. This program plays the game with at least two or more players and house.
+Blackjack is a card game for making the score 21.
+This program plays the game with at least two or more players and house.
 
 ## Blackjack Rules
 
@@ -19,7 +20,7 @@ Blackjack is a card game for making the score 21. This program plays the game wi
 
 ## Game Rules
 
-* Player1 playes in interactive mode
+* Player1 plays in interactive mode
 * House and other players play with the following decisions
 	* Always decide **'HIT'** if current sum is below 13 (sum < 13)
 	* Decide **'HIT'** or **'STAND'** with a 1/2 probability if sum is between 13 and 16
@@ -28,15 +29,15 @@ Blackjack is a card game for making the score 21. This program plays the game wi
 
 ## Data Structures & Functions
 
-* `std::vector<string> cards`: a global variable to store the cards used in the game
-* `void swap (int i, int j)`: a function which swaps two elements in global variable 'cards' by **index** *i* and *j*
+* `std::vector<string> cards` a global variable to store the cards used in the game
+* `void swap (int i, int j)` a function which swaps two elements in global variable 'cards' by **index** *i* and *j*
 * `void shuffle_cards (int num_decks)`
 	* a function which shuffles cards of 'num_decks' of decks at **1000 times**
 	* **shuffling algorithm**
 		* initialize the cards by **LOW** score to **HIGH** score (e.g., 1c 1c ... 1h 1h ... 1d 1d ... 1s 1s ... 2c 2c ... 2h 2h ... 13s)
 		* **swap two elements** of random indices at **1000 times**
-* `string draw_card()`: return a **BACKMOST** card in the 'cards' vector with pop_back()
-* `int is_hit = rand() % 2`: calculate probability of house rule #3 (1/2 probability)
+* `string draw_card()` return a **BACKMOST** card in the 'cards' vector with pop_back()
+* `int is_hit = rand() % 2` calculate probability of house rule #3 (1/2 probability)
 
 ## Command Line Arguments
 
@@ -45,4 +46,4 @@ Blackjack is a card game for making the score 21. This program plays the game wi
 ```
 * R: random seed number
 * N: number of players
-* *(stdin)* h (HIT) or s (STAND) for player1's decisions
+* *(stdin)* **h** (HIT) or **s** (STAND) for player1's decisions
