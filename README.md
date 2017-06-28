@@ -33,7 +33,7 @@ Blackjack is a card game for making the score 21. This program plays the game wi
 * `void shuffle_cards (int num_decks)`
 	* a function which shuffles cards of 'num_decks' of decks at **1000 times**
 	* **shuffling algorithm**
-		* initialize the cards by **LOW** score to **HIGH** score
+		* initialize the cards by **LOW** score to **HIGH** score (e.g., 1c 1c ... 1h 1h ... 1d 1d ... 1s 1s ... 2c 2c ... 2h 2h ... 13s)
 		* **swap two elements** of random indices at **1000 times**
 * `string draw_card()`: return a **BACKMOST** card in the 'cards' vector with pop_back()
 * `int is_hit = rand() % 2`: calculate probability of house rule #3 (1/2 probability)
